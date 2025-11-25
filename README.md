@@ -395,18 +395,6 @@ Por padrão, a API roda na porta 3000. Para alterar, modifique a constante no c�
 const PORT = 3000; // Altere para a porta desejada
 ```
 
-## 🛡️ Recursos de Segurança
-
-A API implementa diversas proteções e validações:
-
-- ✅ Validação de tipos de dados
-- ✅ Proteção contra valores infinitos e NaN
-- ✅ Limites de tamanho para prevenir overflow
-- ✅ Proteção contra URLs muito longas (máx: 2048 caracteres)
-- ✅ Tratamento global de exceções não capturadas
-- ✅ Validação de ranges realistas para valores físicos
-- ✅ Proteção contra divisão por zero
-
 ## 📝 Licença
 
 Este projeto é de código aberto e está disponível para uso livre.
