@@ -55,12 +55,6 @@ GET http://localhost:3000/api/imc?peso=70&altura=1.75
 - Obesidade Grau II: 35 ≤ IMC < 40
 - Obesidade Grau III: IMC ≥ 40
 
-**Validações:**
-- Peso e altura devem ser maiores que zero
-- Altura não pode ser zero
-- Peso máximo: 1000kg
-- Altura máxima: 3m
-
 ---
 
 ### 2. Gerador de Senhas
@@ -84,9 +78,6 @@ GET http://localhost:3000/api/senha?tamanho=16&especiais=true
 - Letras: a-z, A-Z
 - Números: 0-9
 - Especiais: !@#$%&*()_+-=[]{}|;:,.<>?
-
-**Validações:**
-- Tamanho deve ser um número inteiro entre 4 e 50
 
 ---
 
@@ -114,12 +105,6 @@ GET http://localhost:3000/api/numeros?lista=5,2,8,1,9,3
 - Maior valor
 - Menor valor
 
-**Validações:**
-- Entrada deve ser um array válido
-- Máximo de 1000 números permitidos
-- Números devem ser finitos e válidos
-- Proteção contra overflow na soma
-
 ---
 
 ### 4. Conversor de Temperatura
@@ -144,12 +129,6 @@ GET http://localhost:3000/api/temperatura?valor=25&de=C&para=F
 - `C` - Celsius
 - `F` - Fahrenheit
 - `K` - Kelvin
-
-**Validações:**
-- Temperatura em Kelvin não pode ser negativa
-- Temperatura não pode ser menor que zero absoluto (-273.15°C)
-- Escalas devem ser C, F ou K
-- Valor deve ser um número finito e válido
 
 ## 📊 Exemplos de Resposta
 
@@ -396,5 +375,6 @@ const PORT = 3000; // Altere para a porta desejada
 ```
 
 ## 📝 Licença
+
 
 Este projeto é de código aberto e está disponível para uso livre.
